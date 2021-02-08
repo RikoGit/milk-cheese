@@ -1,0 +1,50 @@
+{
+  "name": "milk-cheese",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config configs/webpack.config.js",
+    "start": "npm run build && node app.js",
+    "lint": "eslint --ext js,jsx components app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RikoGit/Milk-Cheese.git"
+  },
+  "author": "RikoGit",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/RikoGit/Milk-Cheese/issues"
+  },
+  "homepage": "https://github.com/RikoGit/Milk-Cheese#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "express": "^4.17.1",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.6",
+    "sass-loader": "^11.0.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.21.1",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5"
+  }
+}
