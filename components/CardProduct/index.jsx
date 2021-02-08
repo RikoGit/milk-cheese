@@ -1,6 +1,7 @@
 import React from "react";
 
 import Card from "../Card/index.jsx";
+import Description from "../Description/index.jsx";
 import Recommend from "../Recommend/index.jsx";
 import styles from "./styles.scss";
 
@@ -14,7 +15,13 @@ const CardProduct = ({ cards, card, addCardInCart, deleteCardInCart }) => (
       addCardInCart={addCardInCart}
       deleteCardInCart={deleteCardInCart}
     />
-    <Recommend cards={cards} currentCard={card} />
+    <Recommend
+      cards={cards}
+      currentCard={card}
+      addCardInCart={addCardInCart}
+      deleteCardInCart={deleteCardInCart}
+    />
+    <Description card={card} />
   </div>
 );
 

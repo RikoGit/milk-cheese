@@ -1,6 +1,7 @@
 import React from "react";
 
 import CartList from "../CartList/index.jsx";
+import Payment from "../Payment/index.jsx";
 import styles from "./styles.scss";
 
 const Cart = ({ cards, addCardInCart, deleteCardInCart }) => (
@@ -13,6 +14,7 @@ const Cart = ({ cards, addCardInCart, deleteCardInCart }) => (
       addCardInCart={addCardInCart}
       deleteCardInCart={deleteCardInCart}
     />
+    <Payment />
   </div>
 );
 

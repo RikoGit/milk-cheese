@@ -4,7 +4,6 @@ import Card from "../Card/index.jsx";
 import styles from "./styles.scss";
 
 const CartList = ({ cards, addCardInCart, deleteCardInCart }) => {
-  console.log(cards);
   return (
     <div className={styles.root}>
       <div className={styles.count}>

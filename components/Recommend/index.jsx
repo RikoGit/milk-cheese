@@ -3,7 +3,7 @@ import React from "react";
 import Card from "../Card/index.jsx";
 import styles from "./styles.scss";
 
-const Recommend = ({ cards, currentCard }) => {
+const Recommend = ({ cards, currentCard, addCardInCart, deleteCardInCart }) => {
   const recommendCards = cards.filter(
     (card) => card.group === currentCard.group && card !== currentCard
   );
@@ -15,7 +15,11 @@ const Recommend = ({ cards, currentCard }) => {
         <ul className={styles.list}>
           {recommendCards.map((recommendCard) => (
             <li className={styles.item}>
-              <Card card={recommendCard} />
+              <Card
+                card={recommendCard}
+                addCardInCart={addCardInCart}
+                deleteCardInCart={deleteCardInCart}
+              />
             </li>
           ))}
         </ul>

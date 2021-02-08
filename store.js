@@ -21,7 +21,7 @@ const state = {
       countInCart: 1,
     },
     {
-      id: 2,
+      id: 3,
       title: "Best-in 10 British Big Eggs 2",
       price: 1.59,
       image: "4.png",
@@ -29,7 +29,7 @@ const state = {
       countInCart: 0,
     },
     {
-      id: 2,
+      id: 4,
       title: "Best-in 10 British Big Eggs 3",
       price: 1.59,
       image: "4.png",
@@ -37,7 +37,7 @@ const state = {
       countInCart: 0,
     },
     {
-      id: 2,
+      id: 5,
       title: "Best-in 10 British Big Eggs 4",
       price: 1.59,
       image: "4.png",
@@ -45,7 +45,7 @@ const state = {
       countInCart: 0,
     },
     {
-      id: 2,
+      id: 6,
       title: "Best-in 10 British Big Eggs 5",
       price: 1.59,
       image: "4.png",
@@ -53,7 +53,7 @@ const state = {
       countInCart: 0,
     },
     {
-      id: 3,
+      id: 7,
       title: "Best-in 10 British Big Eggs 1",
       price: 1.59,
       image: "2.png",
@@ -61,7 +61,7 @@ const state = {
       countInCart: 15,
     },
     {
-      id: 4,
+      id: 8,
       title: "Best-in 10 British Big Eggs 1",
       price: 1.59,
       image: "3.png",
@@ -69,7 +69,7 @@ const state = {
       countInCart: 0,
     },
     {
-      id: 5,
+      id: 9,
       title: "Just Milk Semi-Skimmed 6 x 1L (Case of 2) 2",
       price: 1.59,
       image: "1.png",
@@ -77,7 +77,7 @@ const state = {
       countInCart: 2,
     },
     {
-      id: 6,
+      id: 10,
       title: "Just Milk Semi-Skimmed 6 x 1L (Case of 2) 3",
       price: 1.59,
       image: "1.png",
@@ -85,7 +85,7 @@ const state = {
       countInCart: 2,
     },
     {
-      id: 7,
+      id: 11,
       title: "Best-in 10 British Big Eggs 2",
       price: 1.59,
       image: "3.png",
