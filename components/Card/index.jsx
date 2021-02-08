@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { PATH } from "../../constants.js";
 import styles from "./styles.scss";
 
 const Card = ({ card, addCardInCart, deleteCardInCart }) => {
@@ -8,11 +9,11 @@ const Card = ({ card, addCardInCart, deleteCardInCart }) => {
 
   return (
     <div className={styles.root}>
-      <Link to={`/${card.id}`} className={styles.link}>
+      <Link to={`/${PATH}/${card.id}`} className={styles.link}>
         <div className={styles.title}>{card.title}</div>
       </Link>
       <div className={styles.price}>{card.price}</div>
-      <Link to={`/${card.id}`} className={styles.link}>
+      <Link to={`/${PATH}/${card.id}`} className={styles.link}>
         <div className={styles.image}>
           <img src={`images/${card.image}`} alt={card.title} />
         </div>

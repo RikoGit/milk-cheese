@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 
 import CardProduct from "../CardProduct/index.jsx";
 import Cart from "../Cart/index.jsx";
+import { PATH } from "../../constants.js";
 import styles from "./styles.scss";
 
 import { addCardInCart, deleteCardInCart } from "../../actions.js";
@@ -12,7 +13,7 @@ const Main = ({ cards, dispatchAddCardInCart, dispatchDeleteCardInCart }) => (
   <div className={styles.root}>
     <Switch>
       {cards.map((card) => (
-        <Route path={`/${card.id}`} key={card.id}>
+        <Route path={`/${PATH}/${card.id}`} key={card.id}>
           <CardProduct
             cards={cards}
             card={card}
