@@ -1,0 +1,63 @@
+@import "../../constants.scss";
+
+@mixin _buttonInCart() {
+  width: 38px;
+  height: 38px;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.root {
+  padding: 50px 18px 0;
+  width: 312px;
+  height: 460px;
+  background: #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.image {
+  margin: 0 auto;
+  width: 243px;
+  height: 190px;
+  text-align: center;
+}
+.link {
+  text-decoration: none;
+}
+.title {
+  margin: 0 0 13px 0;
+  @include _font(NotoSans, 16px, 22px, normal, 500);
+}
+.price {
+  margin: 0 0 7px 0;
+  @include _font(NotoSans, 16px, 22px, normal, 500, #999);
+}
+.full_price {
+  @include _font(Mukta, 30px, 36px, normal, bold);
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add {
+  @include _buttonInCart();
+  background: #ffb000;
+}
+.delete {
+  @include _buttonInCart();
+  background-color: #f4f3f3;
+  background-image: url("../../docs/images/trash.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.count {
+  margin: 0 12px;
+  @include _font(NotoSans, 16px, 22px, normal, 500);
+}
+.addText {
+  margin: 0 12px 0 0;
+  @include _font(NotoSans, 14px, 20px, normal, bold, #ffbc41);
+}

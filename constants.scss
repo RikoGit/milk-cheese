@@ -1,0 +1,10 @@
+$textColor: #333;
+
+@mixin _font($family, $size, $lineHeight, $style, $weight, $color: $textColor) {
+  font-family: $family;
+  font-size: $size;
+  font-style: $style;
+  font-weight: $weight;
+  line-height: $lineHeight;
+  color: $color;
+}

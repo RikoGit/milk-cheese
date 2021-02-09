@@ -1,2 +1,3 @@
-// eslint-disable-next-line import/prefer-default-export
 export const PATH = "milk-cheese";
+
+export const CURRENCY = "£";

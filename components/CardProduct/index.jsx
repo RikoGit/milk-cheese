@@ -11,6 +11,7 @@ const CardProduct = ({ cards, card, addCardInCart, deleteCardInCart }) => (
       <h2>Milk-Cheese</h2>
     </header>
     <Card
+      type="product"
       card={card}
       addCardInCart={addCardInCart}
       deleteCardInCart={deleteCardInCart}

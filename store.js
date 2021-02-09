@@ -58,7 +58,7 @@ const state = {
       price: 1.59,
       image: "2.png",
       group: 2,
-      countInCart: 15,
+      countInCart: 1,
     },
     {
       id: 8,
@@ -91,6 +91,14 @@ const state = {
       image: "3.png",
       group: 3,
       countInCart: 3,
+    },
+    {
+      id: 12,
+      title: "Best-in 10 British Big Eggs 1",
+      price: 1.59,
+      image: "5.png",
+      group: 5,
+      countInCart: 7,
     },
   ],
 };
