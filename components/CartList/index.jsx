@@ -14,7 +14,7 @@ const CartList = ({ cards, addCardInCart, deleteCardInCart }) => {
         (card) =>
           card.countInCart > 0 && (
             <Card
-              type="cart"
+              type="horizontal"
               card={card}
               addCardInCart={addCardInCart}
               deleteCardInCart={deleteCardInCart}

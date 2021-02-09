@@ -12,3 +12,14 @@
   margin: 0;
   @include _font(Mukta, 24px, 32px, normal, bold);
 }
+.back {
+  text-decoration: none;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 12px;
+  background-image: url("../../docs/images/arrow line_right.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

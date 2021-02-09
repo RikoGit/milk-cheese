@@ -8,9 +8,8 @@ import styles from "./styles.scss";
 
 const CardProduct = ({ cards, card, addCardInCart, deleteCardInCart }) => (
   <div className={styles.root}>
-    <Header title="Milk-Cheese" />
+    <Header type="product" />
     <Card
-      type="product"
       card={card}
       addCardInCart={addCardInCart}
       deleteCardInCart={deleteCardInCart}

@@ -11,6 +11,7 @@ const state = {
       image: "1.png",
       group: 1,
       countInCart: 2,
+      isFavorite: false,
     },
     {
       id: 2,
@@ -19,6 +20,7 @@ const state = {
       image: "4.png",
       group: 4,
       countInCart: 1,
+      isFavorite: false,
     },
     {
       id: 3,
@@ -27,6 +29,7 @@ const state = {
       image: "4.png",
       group: 4,
       countInCart: 0,
+      isFavorite: false,
     },
     {
       id: 4,
@@ -35,6 +38,7 @@ const state = {
       image: "4.png",
       group: 4,
       countInCart: 0,
+      isFavorite: false,
     },
     {
       id: 5,
@@ -43,6 +47,7 @@ const state = {
       image: "4.png",
       group: 4,
       countInCart: 0,
+      isFavorite: false,
     },
     {
       id: 6,
@@ -51,6 +56,7 @@ const state = {
       image: "4.png",
       group: 4,
       countInCart: 0,
+      isFavorite: false,
     },
     {
       id: 7,
@@ -59,6 +65,7 @@ const state = {
       image: "2.png",
       group: 2,
       countInCart: 1,
+      isFavorite: false,
     },
     {
       id: 8,
@@ -67,6 +74,7 @@ const state = {
       image: "3.png",
       group: 3,
       countInCart: 0,
+      isFavorite: false,
     },
     {
       id: 9,
@@ -75,6 +83,7 @@ const state = {
       image: "1.png",
       group: 1,
       countInCart: 2,
+      isFavorite: false,
     },
     {
       id: 10,
@@ -83,6 +92,7 @@ const state = {
       image: "1.png",
       group: 1,
       countInCart: 2,
+      isFavorite: false,
     },
     {
       id: 11,
@@ -91,6 +101,7 @@ const state = {
       image: "3.png",
       group: 3,
       countInCart: 3,
+      isFavorite: false,
     },
     {
       id: 12,
@@ -99,6 +110,7 @@ const state = {
       image: "5.png",
       group: 5,
       countInCart: 7,
+      isFavorite: false,
     },
   ],
 };

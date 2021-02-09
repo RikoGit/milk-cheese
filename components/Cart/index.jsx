@@ -7,7 +7,7 @@ import styles from "./styles.scss";
 
 const Cart = ({ cards, addCardInCart, deleteCardInCart }) => (
   <div className={styles.root}>
-    <Header title="Cart" />
+    <Header type="cart" />
     <CartList
       cards={cards}
       addCardInCart={addCardInCart}

@@ -1,5 +1,10 @@
+@import "../../constants.scss";
+
 .root {
   margin: 0 0 24px 0;
+}
+.header {
+  @include _font(Mukta, 16px, 36px, normal, bold);
 }
 .list {
   margin: 0 -4px 0;

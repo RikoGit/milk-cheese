@@ -16,6 +16,7 @@ const Recommend = ({ cards, currentCard, addCardInCart, deleteCardInCart }) => {
           {recommendCards.map((recommendCard) => (
             <li className={styles.item}>
               <Card
+                type="recommend"
                 card={recommendCard}
                 addCardInCart={addCardInCart}
                 deleteCardInCart={deleteCardInCart}

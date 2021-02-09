@@ -24,6 +24,7 @@
     "@babel/preset-env": "^7.12.13",
     "@babel/preset-react": "^7.12.13",
     "babel-loader": "^8.2.2",
+    "classnames": "^2.2.6",
     "css-loader": "^5.0.1",
     "eslint": "^7.19.0",
     "eslint-config-airbnb": "^18.2.1",

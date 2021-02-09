@@ -4,6 +4,6 @@
   background: #fff;
 }
 .count {
-  margin: 0 0 12px 0;
+  margin: 0 $mainPaddingLeft 12px $mainPaddingLeft;
   @include _font(NotoSans, 14px, 22px, normal, 600);
 }

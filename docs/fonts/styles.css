@@ -9,7 +9,6 @@
   font-weight: 700;
   font-style: normal;
 }
-
 @font-face {
   font-family: "NotoSans";
   src: url("./NotoSans/regular.eot");
@@ -21,17 +20,21 @@
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: "NotoSans";
   src: local("NotoSans"), url("./NotoSans/medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
   font-family: "NotoSans";
   src: local("NotoSans"), url("./NotoSans/semiBold.ttf") format("truetype");
   font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: local("NotoSans"), url("./NotoSans/bold.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
 }
