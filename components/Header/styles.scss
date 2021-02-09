@@ -1,0 +1,14 @@
+@import "../../constants.scss";
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  text-align: center;
+  background: $mainColor;
+}
+.title {
+  margin: 0;
+  @include _font(Mukta, 24px, 32px, normal, bold);
+}

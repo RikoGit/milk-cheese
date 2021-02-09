@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Mukta";
+  src: url("./Mukta/bold.eot");
+  src: local("Mukta"),
+    url("./Mukta/bold.eot?#iefix") format("embedded-opentype"),
+    url("./Mukta/bold.woff2") format("woff2"),
+    url("./Mukta/bold.woff") format("woff"),
+    url("./Mukta/bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("./NotoSans/regular.eot");
+  src: local("NotoSans"),
+    url("./NotoSans/regular.eot?#iefix") format("embedded-opentype"),
+    url("./NotoSans/regular.woff2") format("woff2"),
+    url("./NotoSans/regular.woff") format("woff"),
+    url("./NotoSans/regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: local("NotoSans"), url("./NotoSans/medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: local("NotoSans"), url("./NotoSans/semiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}

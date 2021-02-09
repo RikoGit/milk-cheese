@@ -1,0 +1,9 @@
+@import "../../constants.scss";
+
+.root {
+  background: #fff;
+}
+.count {
+  margin: 0 0 12px 0;
+  @include _font(NotoSans, 14px, 22px, normal, 600);
+}

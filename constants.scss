@@ -1,4 +1,8 @@
 $textColor: #333;
+$mainColor: #ffb000;
+$mainPaddingLeft: 24px;
+$mainPaddingTop: 74px;
+$mainPaddingBottom: 24px;
 
 @mixin _font($family, $size, $lineHeight, $style, $weight, $color: $textColor) {
   font-family: $family;

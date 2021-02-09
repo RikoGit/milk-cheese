@@ -8,7 +8,6 @@
   border: none;
   outline: none;
 }
-
 .root {
   padding: 50px 18px 0;
   width: 312px;
@@ -44,7 +43,7 @@
 }
 .add {
   @include _buttonInCart();
-  background: #ffb000;
+  background: $mainColor;
 }
 .delete {
   @include _buttonInCart();
