@@ -52,6 +52,10 @@
     height: 72px;
   }
 
+  &_type_vertical .img {
+    object-fit: contain;
+  }
+
   &_type_horizontal .title {
     margin: 0 0 6px 0;
     @include _font(NotoSans, 12px, 16px, normal, 400);
