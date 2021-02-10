@@ -4,6 +4,8 @@ $mainPaddingLeft: 24px;
 $mainPaddingTop: 74px;
 $mainPaddingBottom: 24px;
 $borderColor: #f2f2f2;
+$borderRadius: 8px;
+$mainMaxWidth: 450px;
 
 @mixin _font($family, $size, $lineHeight, $style, $weight, $color: $textColor) {
   font-family: $family;

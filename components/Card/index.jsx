@@ -10,7 +10,9 @@ const Card = ({ type = "vertical", card, addCardInCart, deleteCardInCart }) => {
   const isInCart = Boolean(card.countInCart > 0);
   const fullPrice = (card.price * card.countInCart).toFixed(2);
   const price = (
-    <div className={styles.price}>1 pc / {`${CURRENCY}${card.price}`}</div>
+    <div className={styles.price}>
+      {type === "horizontal" ? "·" : ""} 1 pc / {`${CURRENCY}${card.price}`}
+    </div>
   );
 
   return (

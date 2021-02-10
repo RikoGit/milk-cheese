@@ -1,7 +1,11 @@
 @import "../../constants.scss";
 
 .root {
+  margin: 0 auto;
+  padding: 12px 0;
+  max-width: $mainMaxWidth;
   background: #fff;
+  border-radius: $borderRadius;
 }
 .count {
   margin: 0 $mainPaddingLeft 12px $mainPaddingLeft;

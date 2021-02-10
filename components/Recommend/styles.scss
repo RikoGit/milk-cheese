@@ -4,6 +4,7 @@
   margin: 0 0 24px 0;
 }
 .header {
+  margin: 14px 0 3px 0;
   @include _font(Mukta, 16px, 36px, normal, bold);
 }
 .list {
