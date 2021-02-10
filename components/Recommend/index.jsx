@@ -12,18 +12,20 @@ const Recommend = ({ cards, currentCard, addCardInCart, deleteCardInCart }) => {
     recommendCards.length > 0 && (
       <div className={styles.root}>
         <h3 className={styles.header}>Buy with this product</h3>
-        <ul className={styles.list}>
-          {recommendCards.map((recommendCard) => (
-            <li className={styles.item}>
-              <Card
-                type="recommend"
-                card={recommendCard}
-                addCardInCart={addCardInCart}
-                deleteCardInCart={deleteCardInCart}
-              />
-            </li>
-          ))}
-        </ul>
+        <div className={styles.container}>
+          <ul className={styles.list}>
+            {recommendCards.map((recommendCard) => (
+              <li className={styles.item}>
+                <Card
+                  type="recommend"
+                  card={recommendCard}
+                  addCardInCart={addCardInCart}
+                  deleteCardInCart={deleteCardInCart}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     )
   );

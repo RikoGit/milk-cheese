@@ -3,15 +3,25 @@
 .root {
   margin: 0 0 24px 0;
 }
+.container {
+  margin: 0 calc(-#{$mainPaddingLeft});
+  padding: 0 $mainPaddingLeft;
+  overflow-y: hidden;
+}
 .header {
   margin: 14px 0 3px 0;
   @include _font(Mukta, 16px, 36px, normal, bold);
 }
 .list {
+  width: auto;
   margin: 0 -4px 0;
   padding: 0;
   list-style-type: none;
   display: flex;
+
+  .item:last-of-type {
+    padding-right: $mainPaddingLeft;
+  }
 }
 .item {
   margin: 0 4px;

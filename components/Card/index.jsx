@@ -21,7 +21,8 @@ const Card = ({ type = "vertical", card, addCardInCart, deleteCardInCart }) => {
         <Link to={`/${PATH}/${card.id}`} className={styles.link}>
           <div className={styles.image}>
             <img
-              src={`/${PATH}/images/${card.image}`}
+              // src={`/${PATH}/images/${card.image}`}
+              src={`/images/${card.image}`}
               alt={card.title}
               className={styles.img}
             />

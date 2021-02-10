@@ -40,6 +40,10 @@
     border-bottom: 1px solid $borderColor;
   }
 
+  &_type_horizontal:not(:last-of-type) {
+    border-bottom: 1px solid $borderColor;
+  }
+
   &_type_horizontal .image {
     margin: 0;
     position: absolute;
@@ -121,7 +125,7 @@
 }
 .image {
   margin: 0 auto 36px;
-  width: 243px;
+  max-width: 243px;
   height: 190px;
   text-align: center;
   overflow: hidden;
