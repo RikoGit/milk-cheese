@@ -1,0 +1,18 @@
+@import "../../constants.scss";
+
+.root {
+  margin: 0 16px 0 18px;
+  padding: 16px 0 16px 0;
+  border-top: 1px solid #ebebeb;
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.link {
+  @include _font(NotoSans, 14px, 20px, normal, bold, $mainColor);
+  text-decoration: none;
+}
