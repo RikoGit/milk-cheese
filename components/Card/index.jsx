@@ -9,6 +9,9 @@ import styles from "./styles.scss";
 const Card = ({ type = "vertical", card, addCardInCart, deleteCardInCart }) => {
   const isInCart = Boolean(card.countInCart > 0);
   const fullPrice = (card.price * card.countInCart).toFixed(2);
+  const price = (
+    <div className={styles.price}>1 pc / {`${CURRENCY}${card.price}`}</div>
+  );
 
   return (
     <div className={cn(styles.root, styles[`root_type_${type}`])}>
@@ -27,14 +30,14 @@ const Card = ({ type = "vertical", card, addCardInCart, deleteCardInCart }) => {
             {card.title}
           </div>
         </Link>
-
-        <div className={styles.price}>1 pc / {`${CURRENCY}${card.price}`}</div>
+        {type !== "horizontal" ? price : ""}
         <div className={styles.bottom}>
           <div className={styles.bottom__container}>
             <div className={styles.full_price}>
               {card.countInCart
                 ? `${CURRENCY}${fullPrice}`
                 : `${CURRENCY}${card.price}`}
+              {type === "horizontal" && price}
             </div>
             <div className={styles.buttons}>
               {isInCart && (
