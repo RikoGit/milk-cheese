@@ -7,9 +7,18 @@ import Cart from "../Cart/index.jsx";
 import { PATH } from "../../constants.js";
 import styles from "./styles.scss";
 
-import { addCardInCart, deleteCardInCart } from "../../actions.js";
+import {
+  addCardInCart,
+  deleteCardInCart,
+  setFavorites,
+} from "../../actions.js";
 
-const Main = ({ cards, dispatchAddCardInCart, dispatchDeleteCardInCart }) => (
+const Main = ({
+  cards,
+  dispatchAddCardInCart,
+  dispatchDeleteCardInCart,
+  dispatchSetFavorites,
+}) => (
   <div className={styles.root}>
     <Switch>
       {cards.map((card) => (
@@ -19,6 +28,7 @@ const Main = ({ cards, dispatchAddCardInCart, dispatchDeleteCardInCart }) => (
             card={card}
             addCardInCart={dispatchAddCardInCart}
             deleteCardInCart={dispatchDeleteCardInCart}
+            setFavorites={dispatchSetFavorites}
           />
         </Route>
       ))}
@@ -27,6 +37,7 @@ const Main = ({ cards, dispatchAddCardInCart, dispatchDeleteCardInCart }) => (
           cards={cards}
           addCardInCart={dispatchAddCardInCart}
           deleteCardInCart={dispatchDeleteCardInCart}
+          setFavorites={dispatchSetFavorites}
         />
       </Route>
     </Switch>
@@ -38,4 +49,5 @@ const mapStateToProps = (state) => state;
 export default connect(mapStateToProps, {
   dispatchAddCardInCart: addCardInCart,
   dispatchDeleteCardInCart: deleteCardInCart,
+  dispatchSetFavorites: setFavorites,
 })(Main);

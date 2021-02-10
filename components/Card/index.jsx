@@ -6,7 +6,13 @@ import { PATH, CURRENCY } from "../../constants.js";
 import About from "../About/index.jsx";
 import styles from "./styles.scss";
 
-const Card = ({ type = "vertical", card, addCardInCart, deleteCardInCart }) => {
+const Card = ({
+  type = "vertical",
+  card,
+  addCardInCart,
+  deleteCardInCart,
+  setFavorites,
+}) => {
   const isInCart = Boolean(card.countInCart > 0);
   const fullPrice = (card.price * card.countInCart).toFixed(2);
   const price = (
@@ -18,6 +24,26 @@ const Card = ({ type = "vertical", card, addCardInCart, deleteCardInCart }) => {
   return (
     <div className={cn(styles.root, styles[`root_type_${type}`])}>
       <div className={styles.container}>
+        {type !== "horizontal" ? (
+          <button
+            type="button"
+            className={
+              card.isFavorites
+                ? cn(styles.favorites, styles.favorites_active)
+                : styles.favorites
+            }
+            onClick={() => setFavorites(card.id)}
+            title={
+              card.isFavorites
+                ? "Удалить из избранного"
+                : "Добавить в избранное"
+            }
+          >
+            {" "}
+          </button>
+        ) : (
+          ""
+        )}
         <Link to={`/${PATH}/${card.id}`} className={styles.link}>
           <div className={styles.image}>
             <img
