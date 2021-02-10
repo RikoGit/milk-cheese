@@ -16,14 +16,16 @@ const Card = ({ type = "vertical", card, addCardInCart, deleteCardInCart }) => {
         <Link to={`/${PATH}/${card.id}`} className={styles.link}>
           <div className={styles.image}>
             <img
-              src={`images/${card.image}`}
+              src={`/images/${card.image}`}
               alt={card.title}
               className={styles.img}
             />
           </div>
         </Link>
         <Link to={`/${PATH}/${card.id}`} className={styles.link}>
-          <div className={styles.title}>{card.title}</div>
+          <div className={styles.title} title={card.title}>
+            {card.title}
+          </div>
         </Link>
 
         <div className={styles.price}>1 pc / {`${CURRENCY}${card.price}`}</div>

@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// import { PATH } from "../../constants.js";
+import { PATH } from "../../constants.js";
 import styles from "./styles.scss";
 
 const Header = ({ type }) => (
   <header className={styles.header}>
     {type === "product" && (
-      <Link to="/" className={styles.back}>
+      <Link to={`/${PATH}`} className={styles.back}>
         {" "}
       </Link>
     )}

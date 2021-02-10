@@ -31,8 +31,8 @@
   }
 
   &_type_recommend .container {
-    padding: 12px 9px 0 12px;
-    height: 228px;
+    padding: 12px 9px 18px 12px;
+    height: 226px;
   }
 
   &_type_horizontal:not(:last-of-type) {
@@ -48,8 +48,9 @@
   }
 
   &_type_recommend .image {
-    width: 92px;
-    height: 72px;
+    margin-bottom: 8px;
+    width: 100px;
+    height: 100px;
   }
 
   &_type_vertical .img {
@@ -63,6 +64,8 @@
 
   &_type_recommend .title {
     margin: 0 0 6px 0;
+    height: 36px;
+    overflow: hidden;
     @include _font(NotoSans, 13px, 18px, normal, 400);
   }
 
