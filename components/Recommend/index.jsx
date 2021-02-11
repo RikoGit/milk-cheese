@@ -16,7 +16,7 @@ const Recommend = ({
 
   return (
     recommendCards.length > 0 && (
-      <div className={styles.root}>
+      <section className={styles.root}>
         <h3 className={styles.header}>Buy with this product</h3>
         <div className={styles.container}>
           <ul className={styles.list}>
@@ -33,7 +33,7 @@ const Recommend = ({
             ))}
           </ul>
         </div>
-      </div>
+      </section>
     )
   );
 };

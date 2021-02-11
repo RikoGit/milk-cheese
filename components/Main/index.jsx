@@ -11,13 +11,18 @@ import {
   addCardInCart,
   deleteCardInCart,
   setFavorites,
+  onChange,
+  clearAddress,
 } from "../../actions.js";
 
 const Main = ({
   cards,
+  address,
   dispatchAddCardInCart,
   dispatchDeleteCardInCart,
   dispatchSetFavorites,
+  dispatchOnChange,
+  dispatchClearAddress,
 }) => (
   <div className={styles.root}>
     <Switch>
@@ -35,9 +40,12 @@ const Main = ({
       <Route path="/">
         <Cart
           cards={cards}
+          address={address}
           addCardInCart={dispatchAddCardInCart}
           deleteCardInCart={dispatchDeleteCardInCart}
           setFavorites={dispatchSetFavorites}
+          onChange={dispatchOnChange}
+          clearAddress={dispatchClearAddress}
         />
       </Route>
     </Switch>
@@ -50,4 +58,6 @@ export default connect(mapStateToProps, {
   dispatchAddCardInCart: addCardInCart,
   dispatchDeleteCardInCart: deleteCardInCart,
   dispatchSetFavorites: setFavorites,
+  dispatchOnChange: onChange,
+  dispatchClearAddress: clearAddress,
 })(Main);

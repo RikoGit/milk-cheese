@@ -113,6 +113,8 @@ const state = {
       isFavorites: false,
     },
   ],
+  address: { street: "", flat: "", floor: "", block: "" },
+  payment: "",
   /*  cart: [
     { id: 1, count: 2 },
     { id: 2, count: 1 },

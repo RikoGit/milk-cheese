@@ -1,7 +1,9 @@
 import {
   ADD_CARD_IN_CART,
+  CLEAR_ADDRESS,
   DELETE_CARD_IN_CART,
   SET_FAVORITES,
+  ON_CHANGE,
 } from "./actions.js";
 
 export default (state, { type, payload }) => {
@@ -48,6 +50,31 @@ export default (state, { type, payload }) => {
       return {
         ...state,
         cards,
+      };
+    }
+
+    case CLEAR_ADDRESS: {
+      const address = {};
+      Object.keys(state.address).forEach((key) => {
+        address[key] = "";
+        return address;
+      });
+
+      console.log("before");
+      console.log(state.address);
+      console.log("after");
+      console.log(address);
+
+      return {
+        ...state,
+        address,
+      };
+    }
+
+    case ON_CHANGE: {
+      return {
+        ...state,
+        address: { ...state.address, [payload.name]: payload.value },
       };
     }
 
