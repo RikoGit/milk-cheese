@@ -11,7 +11,9 @@ const Header = ({ type }) => (
         {" "}
       </Link>
     )}
-    <h2 className={styles.title}>{type === "cart" ? "Cart" : "Milk-Cheese"}</h2>
+    <h2 className={styles.title}>
+      {type === "cart" ? "Cart" : "Milk & Cheese"}
+    </h2>
   </header>
 );
 

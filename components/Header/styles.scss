@@ -1,12 +1,15 @@
 @import "../../constants.scss";
 
 .header {
+  padding: 6px 0;
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   text-align: center;
   background: $mainColor;
+  border-radius: 0 0 $borderRadius $borderRadius;
+  z-index: 100;
 }
 .title {
   margin: 0;
@@ -18,6 +21,7 @@
   width: 24px;
   height: 24px;
   left: 12px;
+  top: 10px;
   background-image: url("../../docs/images/arrow line_right.png");
   background-position: center;
   background-repeat: no-repeat;

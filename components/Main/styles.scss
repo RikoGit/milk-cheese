@@ -1,0 +1,15 @@
+@import "../../constants.scss";
+
+.root {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 99px;
+    background: $mainColor;
+    border-radius: 0 0 $borderRadius $borderRadius;
+    z-index: -1;
+  }
+}
