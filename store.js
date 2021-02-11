@@ -113,6 +113,16 @@ const state = {
       isFavorites: false,
     },
   ],
+  /*  cart: [
+    { id: 1, count: 2 },
+    { id: 2, count: 1 },
+    { id: 7, count: 1 },
+    { id: 9, count: 2 },
+    { id: 10, count: 2 },
+    { id: 11, count: 3 },
+    { id: 12, count: 7 },
+  ],
+  */
 };
 
 export default createStore(reducer, state);
