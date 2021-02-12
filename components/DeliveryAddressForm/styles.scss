@@ -34,7 +34,7 @@
   justify-content: space-between;
 }
 .input {
-  width: 100%;
+  min-width: 50px;
   height: 48px;
   margin: 0 4px;
   padding: 16px 11px 13px;
@@ -43,6 +43,7 @@
   @include _font(NotoSans, 14px, 19px, normal, 400, #878786);
   box-sizing: border-box;
   outline: none;
+  flex-grow: 1;
   flex-shrink: 1;
 
   &:active,
