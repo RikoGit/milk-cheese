@@ -60,11 +60,6 @@ export default (state, { type, payload }) => {
         return address;
       });
 
-      console.log("before");
-      console.log(state.address);
-      console.log("after");
-      console.log(address);
-
       return {
         ...state,
         address,

@@ -2,10 +2,10 @@ export const PATH = "milk-cheese";
 
 export const CURRENCY = "£";
 
-export const STREET = "Street";
+export const STREET = "street";
 
-export const FLAT = "Flat";
+export const FLAT = "flat";
 
-export const FLOOR = "Floor";
+export const FLOOR = "floor";
 
-export const BLOCK = "Block";
+export const BLOCK = "block";
