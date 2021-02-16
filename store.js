@@ -44,7 +44,7 @@ const state = {
       id: 5,
       title: "Eggs Roskar mega extra SV brown 10pcs",
       price: 1.95,
-      image: "5.png",
+      image: "5.jpg",
       group: 4,
       countInCart: 0,
       isFavorites: false,
