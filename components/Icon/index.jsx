@@ -7,8 +7,6 @@ const Icon = ({ icon = "add", type, active, size = 20 }) => {
   const activeStyles = active ? styles.root_active : "";
   const typeStyles = type ? styles[`root_type_${type}`] : "";
 
-  console.log(active);
-
   return (
     <div
       className={cn(
