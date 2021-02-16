@@ -2,19 +2,18 @@ import React from "react";
 import cn from "classnames";
 
 import { STREET, FLOOR, FLAT, BLOCK } from "../../constants.js";
+import Button from "../Button/index.jsx";
+import Icon from "../Icon/index.jsx";
 import styles from "./styles.scss";
 
 const DeliveryAddressForm = ({ address, onChange, clearAddress }) => (
   <section className={styles.root}>
     <h3 className={styles.title}>Delivery address</h3>
-    <button
-      className={styles.clear}
-      type="button"
-      title="Очистить"
-      onClick={clearAddress}
-    >
-      {" "}
-    </button>
+    <div className={styles.clear}>
+      <Button title="Очистить" onClick={clearAddress}>
+        <Icon icon="delete" size={22} />
+      </Button>
+    </div>
     <div className={styles.form}>
       <div className={styles.address}>
         <label
@@ -26,7 +25,7 @@ const DeliveryAddressForm = ({ address, onChange, clearAddress }) => (
         >
           <input
             value={address[STREET]}
-            onChange={() => onChange(STREET, event.target.value)}
+            onChange={(event) => onChange(STREET, event.target.value)}
             className={styles.input}
           />
           <fieldset className={styles.fieldset}>
@@ -44,7 +43,7 @@ const DeliveryAddressForm = ({ address, onChange, clearAddress }) => (
         >
           <input
             value={address[FLAT]}
-            onChange={() => onChange(FLAT, event.target.value)}
+            onChange={(event) => onChange(FLAT, event.target.value)}
             className={styles.input}
           />
           <fieldset className={styles.fieldset}>
@@ -60,7 +59,7 @@ const DeliveryAddressForm = ({ address, onChange, clearAddress }) => (
         >
           <input
             value={address[FLOOR]}
-            onChange={() => onChange(FLOOR, event.target.value)}
+            onChange={(event) => onChange(FLOOR, event.target.value)}
             className={styles.input}
           />
           <fieldset className={styles.fieldset}>
@@ -76,7 +75,7 @@ const DeliveryAddressForm = ({ address, onChange, clearAddress }) => (
         >
           <input
             value={address[BLOCK]}
-            onChange={() => onChange(BLOCK, event.target.value)}
+            onChange={(event) => onChange(BLOCK, event.target.value)}
             className={styles.input}
           />
           <fieldset className={styles.fieldset}>

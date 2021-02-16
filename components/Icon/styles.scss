@@ -1,0 +1,44 @@
+@import "../../constants.scss";
+
+.root {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  &_icon_add {
+    background-image: url("../../docs/images/add.png");
+  }
+
+  &_icon_delete {
+    background-image: url("../../docs/images/trash.png");
+  }
+
+  &_icon_favorites {
+    background-image: url("../../docs/images/favorites.png");
+  }
+
+  &_type_filled {
+    border-radius: 100px;
+  }
+
+  &_type_filled.root_icon_add {
+    background-color: $mainColor;
+    background-size: 46%;
+  }
+
+  &_type_filled.root_icon_delete {
+    background-color: #f4f3f3;
+    background-size: 50%;
+  }
+
+  &_type_filled.root_icon_favorites {
+    background-size: 100%;
+    background-color: transparent;
+  }
+
+  &_active.root_icon_favorites {
+    background-image: url("../../docs/images/favorites_active.png");
+  }
+}

@@ -4,6 +4,8 @@ import cn from "classnames";
 
 import { PATH, CURRENCY } from "../../constants.js";
 import About from "../About/index.jsx";
+import Button from "../Button/index.jsx";
+import Icon from "../Icon/index.jsx";
 import styles from "./styles.scss";
 
 const Card = ({
@@ -13,36 +15,46 @@ const Card = ({
   deleteCardInCart,
   setFavorites,
 }) => {
-  const isInCart = Boolean(card.countInCart > 0);
+  const isInCart = card.countInCart > 0;
   const fullPrice = (card.price * card.countInCart).toFixed(2);
   const price = (
     <div className={styles.price}>
       {type === "horizontal" ? "·" : ""} 1 pc / {`${CURRENCY}${card.price}`}
     </div>
   );
+  let iconSize = 38;
+  if (type === "horizontal") iconSize = 28;
+  if (type === "recommend") iconSize = 24;
+
+  let favoritesIconSize = 20;
+  if (type === "recommend") favoritesIconSize = 16;
 
   return (
     <div className={cn(styles.root, styles[`root_type_${type}`])}>
       <div className={styles.container}>
-        {type !== "horizontal" ? (
-          <button
-            type="button"
+        {type !== "horizontal" && (
+          <div
             className={
               card.isFavorites
                 ? cn(styles.favorites, styles.favorites_active)
                 : styles.favorites
             }
-            onClick={() => setFavorites(card.id)}
-            title={
-              card.isFavorites
-                ? "Удалить из избранного"
-                : "Добавить в избранное"
-            }
           >
-            {" "}
-          </button>
-        ) : (
-          ""
+            <Button
+              title={
+                card.isFavorites
+                  ? "Удалить из избранного"
+                  : "Добавить в избранное"
+              }
+              onClick={() => setFavorites(card.id)}
+            >
+              <Icon
+                icon="favorites"
+                active={card.isFavorites}
+                size={favoritesIconSize}
+              />
+            </Button>
+          </div>
         )}
         <Link to={`/${PATH}/${card.id}`} className={styles.link}>
           <div className={styles.image}>
@@ -58,7 +70,7 @@ const Card = ({
             {card.title}
           </div>
         </Link>
-        {type !== "horizontal" ? price : ""}
+        {type !== "horizontal" && price}
         <div className={styles.bottom}>
           <div className={styles.bottom__container}>
             <div className={styles.full_price}>
@@ -69,28 +81,28 @@ const Card = ({
             </div>
             <div className={styles.buttons}>
               {isInCart && (
-                <button
-                  className={styles.delete}
-                  type="button"
+                <Button
+                  title="Удалить из корзины"
                   onClick={() => deleteCardInCart(card.id)}
-                  title="удалить из корзины"
                 >
-                  {" "}
-                </button>
+                  <Icon icon="delete" type="filled" size={iconSize} />
+                </Button>
               )}
-              {isInCart ? (
+              {isInCart && (
                 <span className={styles.count}>{card.countInCart}</span>
-              ) : (
-                <span className={styles.addText}>Add</span>
               )}
-              <button
-                className={styles.add}
-                type="button"
+              <Button
+                title="Добавить в корзину"
                 onClick={() => addCardInCart(card.id)}
-                title="добавить в корзину"
               >
-                {" "}
-              </button>
+                {!isInCart && (
+                  <>
+                    <span className={styles.addText}>Add</span>
+                    <Icon icon="add" type="filled" size={iconSize} />
+                  </>
+                )}
+                {isInCart && <Icon icon="add" type="filled" size={iconSize} />}
+              </Button>
             </div>
           </div>
         </div>

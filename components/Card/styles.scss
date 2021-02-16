@@ -94,23 +94,6 @@
     @include _font(NotoSans, 12px, 16px, normal, 500, #878786);
   }
 
-  &_type_horizontal .add,
-  &_type_horizontal .delete {
-    width: 28px;
-    height: 28px;
-  }
-
-  &_type_recommend .add,
-  &_type_recommend .delete {
-    width: 24px;
-    height: 24px;
-  }
-
-  &_type_recommend .favorites {
-    width: 16px;
-    height: 14px;
-  }
-
   &_type_horizontal .count {
     margin: 0 10px;
     @include _font(NotoSans, 12px, 16px, normal, 500);
@@ -125,21 +108,7 @@
   position: absolute;
   top: 10px;
   right: 16px;
-  width: 20px;
-  height: 20px;
-  background-image: url("../../docs/images/favorites.png");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 100%;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  outline: none;
 }
-.favorites_active {
-  background-image: url("../../docs/images/favorites_active.png");
-}
-
 .container {
   padding: 50px 16px 18px 18px;
   position: relative;
@@ -181,22 +150,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.add {
-  @include _buttonInCart();
-  background: $mainColor;
-  background-image: url("../../docs/images/add.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 46%;
-}
-.delete {
-  @include _buttonInCart();
-  background-color: #f4f3f3;
-  background-image: url("../../docs/images/trash.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 50%;
 }
 .bottom {
   display: flex;
